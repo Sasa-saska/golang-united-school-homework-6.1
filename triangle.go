@@ -4,3 +4,12 @@ package golang_united_school_homework
 type Triangle struct {
 	Side float64
 }
+
+func (t *Triangle) CalcPerimeter() float64 {
+	return t.Side * 3
+
+}
+
+func (t *Triangle) CalcArea() float64 {
+	return (t.Side * t.Side) / 2
+}
